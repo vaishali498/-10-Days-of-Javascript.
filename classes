@@ -1,0 +1,9 @@
+class Polygon {
+    constructor(sides) {
+        this.sides = sides
+    }
+    perimeter() {
+        let sides = this.sides
+      return sides.reduce((side, accum) => accum += side, 0)
+    }
+}
