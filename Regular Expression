@@ -1,0 +1,8 @@
+
+function regexVar() {
+    
+    var re = /^([a,e,i,o,u]).*\1$/;
+    var str = "abcde"
+    re.test(str)
+    return re;
+}
