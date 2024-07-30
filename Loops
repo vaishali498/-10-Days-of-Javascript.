@@ -1,0 +1,12 @@
+function vowelsAndConsonants(s) {
+    const vowels = ['a','e','i','o','u'];
+    const resultsVowels = [];
+    const resultsConst= [];
+    
+     s.split('').map((letter) => {
+        vowels.includes(letter) ? resultsVowels.push(letter) : resultsConst.push(letter);
+    })
+    
+   const results = resultsVowels.join('') + resultsConst.join('');
+   results.split('').forEach((l) => console.log(l));
+}
