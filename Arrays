@@ -1,0 +1,6 @@
+function getSecondLargest(nums) {
+
+let sorted = new Set(nums.sort(function(a, b){return b - a}));
+let valuesArray = Array.from(sorted);
+return valuesArray[1];
+}
