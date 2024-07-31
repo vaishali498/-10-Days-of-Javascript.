@@ -1,0 +1,19 @@
+function getLetter(s) {
+    let letter;
+    // Write your code here
+    switch (true) {
+        case new Set(["a", "e", "i", "o", "u"]).has(s.charAt(0)):
+            letter = "A";
+            break;
+        case new Set(["b", "c", "d", "f", "g"]).has(s.charAt(0)):
+            letter = "B";
+            break;
+        case new Set(["h", "j", "k", "l", "m"]).has(s.charAt(0)):
+            letter = "C";
+            break;
+        default:
+            letter = "D";
+    }
+
+    return letter;
+}
