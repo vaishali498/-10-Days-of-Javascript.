@@ -1,0 +1,10 @@
+function getCount(objects) {
+    let counter = 0; 
+
+    objects.forEach( ({x, y}) => {
+        if (x === y) 
+            counter++; 
+    } ); 
+    
+    return counter; 
+}
