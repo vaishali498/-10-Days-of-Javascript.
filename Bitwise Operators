@@ -1,0 +1,9 @@
+function getMaxLessThanK(n, k){
+    let maxOfab = 0;
+    for (let b = 1; b <= n; b++) {
+        for (let a = 1; a < b; a++) {
+            maxOfab = (a & b) < k && (a & b) > maxOfab ? a & b : maxOfab
+        }
+    }
+    return maxOfab;
+}
