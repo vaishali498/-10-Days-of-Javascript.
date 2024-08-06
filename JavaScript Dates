@@ -1,0 +1,20 @@
+ function getDayName(dateString) {
+    let dayName;
+    let days = {
+        Sun: "Sunday",
+        Mon: "Monday",
+        Tue: "Tuesday",
+        Wed: "Wednesday",
+        Thu: "Thursday",
+        Fri: "Friday",
+        Sat: "Saturday"
+        
+    }
+    let day  = new Date(dateString)
+    let arr = day.toString().split(' ')
+    let dayshort = arr[0]
+    dayName = days[dayshort]
+    
+    
+    return dayName;
+}
